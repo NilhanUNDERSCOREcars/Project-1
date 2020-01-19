@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BookTickets.com</title>
+  <link rel="stylesheet" type="text/css" href="wlbnew.css">
+  <head>
+  <body>
+    <header>
+    <!adding for video background>
+    <div class="aab">
+     <video  autoplay muted loop preload="auto">
+        <source src="My Video2.mp4" type='video/mp4'>
+     </video>
+    </div>
+    <!top desine>
+    <div class="toplogo"><span><a href ="http://www.railway.gov.lk/"><img src="images.jpg" ><h1>BOOK<i>your</i>TRAIN</h1></a>
+
+    <ul>  <?php  if (isset($_SESSION['username'])) : ?>
+         <li><p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p></li>
+         <li><p> <a href="index.php?logout='1'" style="color: white;">( logout )</a> </p></li>
+       <?php endif ?>
+
+     </ul>
+
+
+    </span></div>
+
+    <!adding for video optical>
+    <div class="header-overlay">
+
+     <div class="nav">
+     <span>
+     <ul>
+
+                 <li><a href="#CITY">Home</a></li>
+                 <li><a href="#CITY">About Us</a></li>
+                 <li><a href="#CITY">Contact Us</a></li>
+                 <li><a href="#CITY">GALLERY</a></li>
+                 <li><a href="#BLOGS">ID</a></li>
+
+       </ul>
+
+       </span>
+       </div>
+       <div class="st">
+       <ul>
+       <li id="en" class="translate"><a href="#">தமிழ்</a></li>
+            <li id="km" class="translate"><a href="#">සිංහල</a></li>
+
+       <div class="vl"></div>
+       </div>
+
+     </div>
+     <! form>
+            <div class="forq">
+        <form action="" method="POST">
+             <input type="text" name="id" placeholder="Enter ID To Search"/><br/>
+           <input type="text" name="fname" placeholder="Enter frome "/><br/>
+           <input type="text" name="lname" placeholder="Enter TO  "/><br/>
+                 <input type="submit" name="search" value="Search Data">
+          </form>
+
+           <from action="" method="POST">
+           <input type="hidden" name="id" placeholder="Enter the city"/>
+           <h4>FROM</h4>
+           <input type="text" name="fname" placeholder="Enter the city"/>
+           <h4>TO</h4>
+           <input type="text" name="lname" placeholder="Enter the city"/>
+           <h4>DATE</h4>
+           <input type="text" name="email" placeholder="Enter Date"/>
+           <h4>price</h4>
+           <input type="text" name="password" placeholder="Price"/>
+           <button type="submit" <a href="paypal.php">  PAY ONLINE</a></button>
+
+           </from>
+
+
+
+    </div>
+    <!Welcome text>
+    <div class="wel">
+    <p class="lang" key="CITY"> Welcome TO<br>BOOK<i>YOUR</i>TRAIN</p>
+    </div>
+    <div class="welbehain">
+    <p class="lang" key="desc"> We save your time both while purchasing.<br>the check-in and during the travel</p>
+    </div>
+
+     </header>
+
+
+
+     <content>
+     <div class="withi">
+         <p>TOP TRAVEL DESTINATIONS</P>
+      <div class="browse"><a href="https://www.youtube.com/watch?v=wTyZUaPkzwo"><span>Browse All</span></a></div>
+
+      <div class="rama"></div>
+      <div class="rjai"><img src="colombo.jpg">
+      <p>New Yourk</p>
+      </div>
+      <div class="cho"><p>Colombo</p></div>
+        <div class="chor"><p>Penn Station,NY</p></div>
+        <div class="chorn"><p>Union Station,CA</p></div>
+         <div class="choq"></div>
+       <div class="choqq"><p>Every day</p></div>
+         <div class="choqqr"><p>From</p></div>
+           <div class="choqqrn"><a href="paypal.html"><p>$255</p></a></div>
+
+
+
+         <div class="ramaq"></div>
+      <div class="rjaiq"><img src="kandy.jpg">
+      <p>Colombo</p>
+      </div>
+      <div class="man"><p>Kandy</p></div>
+        <div class="manq"><p>Penn Station,NY</p></div>
+        <div class="manqq"><p>Union Station,CA</p></div>
+         <div class="manr"></div>
+       <div class="mans"><p>Every day</p></div>
+         <div class="mansq"><p>From</p></div>
+           <div class="manse"><p>$255</p></div>
+
+
+
+
+
+
+         <div class="rasd"></div>
+      <div class="anna"><img src="kurunegala.png">
+      <p>Colombo</p>
+      </div>
+      <div class="annas"><p>kurunegala</p></div>
+        <div class="annaqr"><p>Penn Station,NY</p></div>
+        <div class="annaqs "><p>Union Station,CA</p></div>
+         <div class="annaqw "></div>
+       <div class="annawrt"><p>Every day</p></div>
+         <div class="annaQWE "><p>From</p></div>
+           <div class="annaaswe"><p>$255</p></div>
+
+
+
+
+         <div class="mgr"></div>
+      <div class="mgra"><img src="Batticaloa.jpg">
+      <p>Colombo</p>
+      </div>
+      <div class="mgrb"><p>Batticaloa</p></div>
+        <div class="mgrc"><p>Penn Station,NY</p></div>
+        <div class="mgrd"><p>Union Station,CA</p></div>
+         <div class="mgre"></div>
+       <div class="mgrf"><p>Every day</p></div>
+         <div class="mgrg"><p>From</p></div>
+           <div class="mgrh"><p>$255</p></div>
+
+
+
+
+         <div class="raja"></div>
+      <div class="rasda"><img src="anurathapura.jpg">
+      <p>Colombo</p>
+      </div>
+      <div class="rasdc"><p>Anurathapura</p></div>
+        <div class="rasdd"><p>Penn Station,NY</p></div>
+        <div class="rasde"><p>Union Station,CA</p></div>
+         <div class="rasdf"></div>
+       <div class="rasdg"><p>Every day</p></div>
+         <div class="rasdh"><p>From</p></div>
+           <div class="rasdi"><p>$255</p></div>
+
+
+
+
+
+           <div class="tata"></div>
+      <div class="tataa"><img src="galle.jpg">
+      <p>Colombo</p>
+      </div>
+      <div class="tatab"><p>Galle</p></div>
+        <div class="tatac"><p>Penn Station,NY</p></div>
+        <div class="tatad"><p>Union Station,CA</p></div>
+         <div class="tatae"></div>
+       <div class="tataf"><p>Every day</p></div>
+         <div class="tatag"><p>From</p></div>
+           <div class="tatah"><p>$255</p></div>
+
+
+
+
+         <div class="bill"></div>
+      <div class="billa"><img src="Hali-Ela-Railway-Station.jpg">
+      <p>Colombo</p>
+      </div>
+      <div class="billb"><p>Hali-Ela</p></div>
+        <div class="billc"><p>Penn Station,NY</p></div>
+        <div class="billd"><p>Union Station,CA</p></div>
+         <div class="bille"></div>
+       <div class="billf"><p>Every day</p></div>
+         <div class="billg"><p>From</p></div>
+           <div class="billh"><p>$255</p></div>
+
+     </div>
+     <div class="nila">
+
+     <div class="nilma">
+     <h1>
+     <span>O</span>
+     <span>l</span>
+     <span>d</span>
+     <span>e</span>
+     <span>r</span>
+     <span>P</span>
+     <span>o</span>
+     <span>s</span>
+     <span>t</span>
+     <span>s</span>
+     </h1>
+     <div class="nilaa"><a href="https://www.youtube.com/watch?v=wTyZUaPkzwo"><span>Older Posts</span></a></div>
+     </div>
+
+       <div class="chin"></div>
+      <div class="china"><img src="Hali-Ela-Railway-Station.jpg">
+      <h1>New train destination</h1>
+      <p>Lorem ipsum dolor sit amet,<br>consectetur adipisici ng elit,sed<br>do elusmod tempor incididunt ut.</p>
+      </div>
+         <div class="chinb"></div>
+       <div class="chinf"><p>by</p></div>
+         <div class="ching"><p>Admin</p></div>
+
+
+
+
+         <div class="mayam"></div>
+      <div class="mayama"><img src="Hali-Ela-Railway-Station.jpg">
+      <h1>New train destination</h1>
+      <p>Lorem ipsum dolor sit amet,<br>consectetur adipisici ng elit,sed<br>do elusmod tempor incididunt ut.</p>
+      </div>
+         <div class="mayamb"></div>
+       <div class="mayamc"><p>by</p></div>
+         <div class="mayamd"><p>Admin</p></div>
+
+
+
+
+         <div class="than"></div>
+      <div class="thana"><img src="Hali-Ela-Railway-Station.jpg">
+      <h1>New train destination</h1>
+      <p>Lorem ipsum dolor sit amet,<br>consectetur adipisici ng elit,sed<br>do elusmod tempor incididunt ut.</p>
+      </div>
+         <div class="thanb"></div>
+       <div class="thanc"><p>by</p></div>
+         <div class="thand"><p>Admin</p></div>
+
+
+         <div class="raji"></div>
+      <div class="rajia"><img src="Hali-Ela-Railway-Station.jpg">
+      <h1>New train destination</h1>
+      <p>Lorem ipsum dolor sit amet,<br>consectetur adipisici ng elit,sed<br>do elusmod tempor incididunt ut.</p>
+      </div>
+         <div class="rajib"></div>
+       <div class="rajic"><p>by</p></div>
+         <div class="rajid"><p>Admin</p></div>
+
+     </div>
+     <div class="animal">
+
+     <div class="thar">
+     <div class="kathal"><p>E-TICKETS ADVANTAGES</p></div>
+     <div class="moon">
+     <img src="263082.png">
+     </div>
+     <div class="mini"><p>it's very easy to order a train ticket <br>online.E-ticket can not be lost or <br>forgotten at home.
+     </p><hr></div>
+
+
+
+     <div class="moora">
+     <img src="2315699.png">
+     </div>
+     <div class="minia"><p>it's very easy to order a train ticket <br>online.E-ticket can not be lost or <br>forgotten at home.
+     </p><hr></div>
+
+
+
+
+
+
+     <div class="moorb">
+     <img src="814587.png">
+     </div>
+     <div class="minib"><p>it's very easy to order a train ticket <br>online.E-ticket can not be lost or <br>forgotten at home.
+     </p><hr></div>
+     <div class="nilaab"><a href="https://www.youtube.com/watch?v=wTyZUaPkzwo"><span>Learn More</span></a></div>
+     </div>
+
+     </div>
+     <div class="manikka">
+
+     <p><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d506976.1540257067!2d79.72122884823645!3d6.920318250268749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srailway%20stations%20in%20sri%20lanka!5e0!3m2!1sen!2slk!4v1577074779309!5m2!1sen!2slk" width="650" height="790" frameborder="0" style="border:0;" allowfullscreen=""></iframe></p>
+
+     </div>
+     </content>
+     <footer>
+
+       <div class="mooram">
+          <hr>
+       <div class="ratha">
+       <span><h1>MENU</h1>
+     <ul>
+
+           <li><a href="#home">Press Centre</a></li>
+           <li><a href="#ABOUT">Travel News</a></li>
+         <li><a href="#CITY">Privacy Policy</a></li>
+         <li><a href="#BLOGS">Best Price Guarantee</a></li>
+         <li><a href="#CONTACT">About Us</a></li>
+         <li><a href="#CONTACT">Contacts</a></li>
+
+       </ul>
+
+       </span>
+       </div>
+       <div class="mole"> <span><h1>Contact Us</h1></span>
+           <div class="contact"><span><a href ="http://www.railway.gov.lk/"><img src="contact.png" ><p>+94 11 4 600 111</p></a> </div>
+        <div class="mail"><span><a href =" gmr@railway.gov.lk"><img src="mail.png" ><p> gmr@railway.gov.lk</p></a> </div>
+        <div class="fax"><span><a href =" gmr@railway.gov.lk"><img src="fax.png" ><p>+94 11 2 446490</p></a> </div>
+        <div class="Add"><span><a href =" gmr@railway.gov.lk"><img src="placeholder.png" ><p>Olcott Mawatha, Colombo 01000<br>
+    Sri Lanka Railway Head Quarters.</p></a></div>
+         </div>
+      <div class="nillal"> <span><h1>Blog Posts</h1>
+         <div class="b1"><span><a href ="http://www.railway.gov.lk/"><img src="pexels-photo-325200.jpeg" ><p>Lorem ipsum dolor sit<br>amet,consectetur <br><br>1 day ago</p></a> </div>
+       <div class="b2"><span><a href ="http://www.railway.gov.lk/"><img src="pexels-photo-1548693.jpeg" ><p>Ut enim ad minim<br>veniam,quis nostrud <br><br>6 years ago</p></a> </div>
+     </div>
+
+     <div class="alih"> <span><h1>Subscribe</h1></span>
+     <p>Be aware of news</p>
+     <div class="smail">
+      E-mail:<br>
+      <form action="mailto:gmr@railway.gov.lk" method="post" enctype="text/plain">
+         <input type="text" name="mail">
+      <input type="submit" value="Send">
+      <input type="reset" value="Reset">
+      </form>
+      </div>
+
+      <div class="ramjj"><hr>
+       <p></p>
+       <div class="downlogo"><span><a href ="http://www.railway.gov.lk/"><img src="images.jpg" ><h1>BOOK<i>your</i>TRAIN</h1></a>
+      </div>
+      </div>
+
+     </div>
+
+
+      <div class="w3-content w3-display-container" style="max-width:600px">
+      <img class="mySlides" src="1.jpeg" style="width:90%">
+      <img class="mySlides" src="2.jpeg" style="width:90%">
+      <img class="mySlides" src="3.jpeg" style="width:90%">
+      <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:90%">
+        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+
+     </footer>
+  </body>
+</html>
